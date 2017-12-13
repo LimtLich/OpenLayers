@@ -4,12 +4,22 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.4/css/ol.css" type="text/css">
     <title>OpenLayers</title>
 </head>
 
 <body>
-    <div id='map' class='map'>
-    </div>
+    <div id="map" class="map"></div>
+    <form class="form-inline">
+        <label>Geometry type &nbsp;</label>
+        <select id="type">
+            <option value="Point">Point</option>
+            <option value="LineString">LineString</option>
+            <option value="Polygon">Polygon</option>
+            <option value="Circle">Circle</option>
+            <option value="None">None</option>
+        </select>
+    </form>
     <script src="bundle.js"></script>
 </body>
 
